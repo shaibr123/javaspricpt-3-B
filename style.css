@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family-Chakra+Petch:w ght@400:700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-:root{
+:root {
     --cor-de-fundo: #1E1E1E;
-        --verde: #6FFF57;
-        --branco: #FFFFFF;
-        --botao-ativo: #3A375E;
-            --botao-inativo: rgba(58, 55, 94, 0.5);
-            --texto-fundo: rgba(58, 55, 94, 0.3);
-}       
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
 
-body{
+body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-  font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
@@ -36,8 +36,9 @@ body{
     color: var(--verde);
 }
 
-.botao{
-    font-family: "Crakra Petch", sans-serif;
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -56,23 +57,22 @@ body{
     border-radius: 40px 40px 0 0;
 }
 
-
 .botoes {
     display: block;
 }
 
 .botao.ativo{
-    background-color: var(--botao-ativo)
-    border-bottom 4px solid var(--verde)
-} 
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
 
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
-    border-radius: 0 0 40px;
+    border-radius: 0 0 40px 40px;
 }
 .aba-conteudo.ativo{
-    display: block;
+    display:block;
 }
 
 .aba-conteudo{
@@ -95,9 +95,9 @@ body{
     flex-wrap: wrap;
 }
 .contador-digito{
-padding: 0 16px;
-text-align: center;
-min-width: 100px;
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
 }
 
 .contador-digito-numero{
@@ -107,23 +107,22 @@ min-width: 100px;
 }
 
 .contador-digito-texto{
-  color: var(--verde);
-  font-size: 20px;
-  margin: 0;
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
 
 }
 
 @media screen and (min-width: 768px) {
- .botoes {
-    display: flex;
- }
+    .botoes {
+        display: flex;
+    }
 
- .botao:first-child {
-    border-radius: 40px 0 0 0;
- }
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
 }
-    
-
-
-
-
